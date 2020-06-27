@@ -1,0 +1,358 @@
+/*General information*/
+@font-face {
+font-family: 'Roboto';
+src: url('fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+html,body{height:100%;}
+BODY{
+    font-size:14px;
+    font-family: 'Roboto','Times New Roman';
+    width:auto;
+    min-width:1500px;
+}
+/*top menu*/
+nav#top-menu{
+    background-color:rgba(14,2,35,0.8);
+    position: fixed;
+    width:100%;
+    font-size:1.2em;
+    height:80px;
+}
+nav#top-menu li.upper-menu:not(.right){
+    vertical-align: middle;
+    line-height: 80px;
+}
+nav#top-menu a:hover:not(.btn){
+  color:rgb(242, 177, 26);
+}
+nav#top-menu a{
+  color:rgb(255,255,255);
+  text-decoration:none;
+}
+.sub-menu li{
+   padding-left: 15px;
+   line-height: 40px;
+}
+.parent-menu li.active:hover .sub-menu {
+  display: block;
+}
+.sub-menu-caption, div.expand{
+    color:rgb(242, 177, 26);
+    position: relative;
+    display: inline-block;
+}
+li.upper-menu{
+    float:left;
+    padding-left:30px;
+}
+li.right:hover{
+    background-color: rgb(242,213,26);
+}
+li.right{ 
+    margin:22px;
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border:2px solid white;
+    background-color: rgba(242,177,26,0.5);
+    border-radius: 32px;
+    float:right;
+}
+ul.sub-menu{
+  display: none;
+  position: absolute;
+  margin-top: -18px;
+  margin-left:-15px;
+  background-color: rgba(14,2,35,0.8);
+  min-width: 160px;
+  z-index: 1;
+  text-align: left;
+}
+/*header*/
+header {
+    background-image: url("images/topimage.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    width: 100%;
+    height:90%;
+}
+h1{
+    font-size: 72px;
+}
+h3{
+   font-size: 28px; 
+}
+h5{
+    font-size: 18px; 
+}
+div.title{
+    position:absolute;
+    right:2%;
+    bottom:32%;
+    color:white;
+}
+div.title h3{
+    padding-top: 30px;
+    position:absolute;
+    right:0px;
+}
+.info{
+    margin-left:10px;
+    margin-right:10px;
+    font-size:0.8em;
+}
+div.social{
+    position:absolute;
+    top:100px;
+    right:0px;
+}
+div.social h5{
+    position:relative;
+    right:70px;
+    color:white;
+    font-size:18px;
+}
+div.social-btns img{
+    width:20px;
+    height:20px;
+    position:relative;
+    left:150px;
+    top:-20px;
+}
+div.social-btns a{
+    opacity:0.6;
+}
+div.social-btns a:hover{
+    opacity:1;
+}
+header .bg-overlay{
+    width: 100%;
+    height:100%;
+    background-color:rgba(14,2,35,0.5);
+}
+div.social{
+    position:absolute;
+    top:100px;
+    right:0px;
+}
+div.social h5{
+    position:relative;
+    right:70px;
+    color:white;
+    font-size:18px;
+}
+div.social-btns img{
+    width:20px;
+    height:20px;
+    position:relative;
+    left:150px;
+    top:-20px;
+}
+div.social-btns{
+    opacity:0.6;
+}
+/*Summary section*/
+#summary{
+    margin-left:5%;
+    margin-right:5%;
+}
+h2.text-center, h2.upper{
+    color:rgb(0,0,0);
+    font-size:42px;
+    text-align:center;
+    margin:4%;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-shadow: 2px 0px rgb(0,0,0);
+}
+#summary :not(.text-center){
+    font-size:18px;
+    color:rgb(132,132,132);
+    line-height: 2;
+}
+#summary p.add  span{
+    font-size:1.5em;
+}
+/*Cast and crew section*/
+#cast{
+    background-image: url("images/car.jpg");
+    background-repeat:no-repeat;
+    width:100%;
+    margin-top:2%;
+}
+#cast div.bg-overlay{
+    background-color: rgba(14,2,35,0.9);
+    width:100%;
+    height:100%;
+    text-align: center;
+}
+#cast h4.text-center{
+    color:rgb(255,255,255);
+    font-size:24px;
+    font-weight:bold;
+    text-transform: uppercase;
+    text-align:center;
+    text-shadow: 1px 0px rgb(255,255,255);
+    margin-bottom:80px;
+}
+.line{
+    display:inline-block;
+    margin-top:60px;
+    margin-bottom: 15px;
+    border: none; 
+    background-color: white;
+    height: 2px; 
+    width: 30px;
+}
+.bg-overlay .line{
+    margin-left:0%;
+}
+div.cast-info-container{
+    width:100%;
+    text-align:center;
+    display:inline-block;
+    padding-top:20px;
+    padding-bottom:20px;
+    min-width: 500px;
+}
+div.cast-info-cell{
+   display:inline-block;  
+   width: 18%;
+   
+}
+.cast-info{
+    line-height: 25px;
+    position:relative;
+    padding-bottom: 80px;
+}
+div.cast-info-cell img{
+    width:220px;
+}
+div.cast-text{
+    background-color: rgba(255,255,255,0.8);
+    text-transform: uppercase;
+    width:220px;
+    position:absolute;
+    margin-left:18%;
+    top:320px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.cast-info-cell:hover .cast-text, .cast-info-cell:hover .cast-head{
+    background-color:rgb(242,213,26);
+    opacity: 1;
+}
+.cast-info-cell:hover .cast-text a{
+    color:rgb(255,255,255);
+}
+.cast-text a{
+    color: rgb(42,42,42);
+    font-size:18px;
+    text-decoration: none;
+}
+.cast-text p{
+    text-transform: uppercase;
+    font-size:14px;
+    color:rgb(132,132,132);
+}
+.cast-info-cell:last-child .cast-text{
+    padding-bottom:35px;
+    padding-top:10px;
+}
+.cast-head{
+    position:absolute;
+    top:10px;
+    display:block;
+    background-color:rgba(242,213,26,0.8);
+    color:rgba(255,255,255,0.8);
+    font-size:14px;
+    height:25px;
+    width:50px;
+    left:20%;
+}
+.cast-info-cell:last-child .cast-head{
+    width:70px;
+}
+/*Trailer section*/
+#trailer{
+    text-align:center;
+}
+iframe{
+    width:1050px;
+    height:650px;
+}
+#trailer a{
+    text-decoration:none;
+    color:rgb(132,132,132);
+}
+#trailer p{
+    color:rgb(132,132,132);
+    font-size:18px;
+    line-height: 40px;
+}
+/*Tickets*/
+h4{
+    text-align: center;
+    color:rgb(255,255,255);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size:24px;
+    margin-bottom: 60px;
+}
+#tickets{
+    background-image: url("images/cinema.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:260px;
+    margin-top:60px;
+    margin-bottom:20px;
+}
+#tickets .bg-overlay{
+    background-color:rgba(255,255,255,0.2);
+    width:100%;
+    height:100%;
+    text-align: center;
+}
+#tickets a:hover{
+    background-color: rgb(242,177,26);
+}
+#tickets a{
+    text-transform: uppercase;
+    text-decoration:none;
+    padding: 10px 25px 10px 25px;
+    color:white;
+    border:2px solid white;
+    background-color: rgba(242,177,26,0.5);
+    border-radius: 32px;
+    font-size: 20px;
+}
+/*Bottom menu*/
+footer{
+    text-align: center;
+    font-size: 0.8em;
+}
+footer a{
+    color:rgb(136,136,136);
+    text-decoration: none;
+    text-transform: capitalize;
+    padding-left:8px;
+}
+footer ul li{
+    display: inline-block;
+    text-align:center;
+    padding-right:5px;
+    margin-bottom:30px;
+}
+footer ul li+li:before{
+    content:" ";
+    display: block;
+    position:absolute;
+    margin-right:10px;
+    margin-top: -5px;
+    background-color: rgb(136,136,136);
+    height:25px;
+    width:1px;
+}
